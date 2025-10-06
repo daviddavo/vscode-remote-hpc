@@ -131,7 +131,7 @@ function ssh_connect () {
     fi
 
     echo "Connecting to $NODE ($TYPE) via SSH"
-    ssh $NODE
+    ssh -p $JOB_PORT $NODE
 }
 
 function connect () {
